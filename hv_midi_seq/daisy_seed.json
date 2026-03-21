@@ -1,0 +1,27 @@
+{
+  "name": "customseed",
+  "som": "seed",
+  "audio": { "channels": 2 },
+  "components": {
+    "linesensor": {
+      "component": "AnalogControl",
+      "pin": 15
+    },
+    "knob1": {
+      "component": "AnalogControl",
+      "pin": 22
+    },
+    "knob2": {
+      "component": "AnalogControl",
+      "pin": 23
+    },
+    "knob3": {
+      "component": "AnalogControl",
+      "pin": 24
+    },
+    "knob4": {
+      "component": "AnalogControl",
+      "pin": 25
+    }
+  }
+}
