@@ -241,20 +241,6 @@ def main():
         f.write(combined + "\n")
 
     print(f"  wrote: {out_path}")
-    print()
-    print("To use in PlugData:")
-    print(f"  1. Create 9 tables ({nv} voices x 3 tables):")
-    for vi in range(nv):
-        print(f"       [table seq_pitch_{vi}]  [table seq_vel_{vi}]  [table seq_dur_ms_{vi}]")
-    print(f"  2. Create [table seq_size 1] and [table seq_metro 1]")
-    print(f"  3. Paste {out_path} into a message box, connect [loadbang] to it")
-    print(f"  4. On song load, read both control tables:")
-    print(f"       [tabread seq_size]  -> [mod] right inlet")
-    print(f"       [tabread seq_metro] -> [metro] right inlet")
-    print(f"  5. Repeat steps 3-4 for each song with its own message box")
-    print(f"  6. One button per song triggers its message box to hot-swap everything")
-    print()
-
 
 if __name__ == "__main__":
     main()
